@@ -5,10 +5,56 @@
 .center {
   text-align: center;
 }
-
+* {
+  background-color: pink;
+}
 .center1 {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin: auto;
+  width: 20%;
+}
+.pink {
+  background-color: pink;
+}
+.navbar1 {
+  padding-top: 100px;
+  text-decoration: none;
+  font-size: 3rem;
+  border: 1px solid black;
+}
+.top-padding {
+  padding-top: 20px;
+}
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation bar */
+
+/* Style the navigation bar links */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-device-width: 480px) {
+.logo {
+  width: 40px;
+  height: 20vh;
+}
+}
+.col-lg-6 {
+  color: rgb(255, 4, 159);
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.9s, color 0.9s;
+  border: solid 1px rgb(153, 4, 96)
+}
+
+/* Change color on hover */
+.col-lg-6:hover {
+  background-color: #db2495;
+  color: black;
 }
