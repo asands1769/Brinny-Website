@@ -11,7 +11,7 @@ const GalleryPage = async () => {
     const imageFilenames = await fs.readdir(imageDirectory)
     return (
       <div>
-            <Navbar></Navbar>
+            <Navbar className="navbar5"></Navbar>
             <div className="container">
             <div className="center">
                 <Logo/>
@@ -20,8 +20,8 @@ const GalleryPage = async () => {
         </div>
       </div>
     )
-  }
-  const Gallery = ({ images }) => {
+}
+const Gallery = ({ images }) => {
     return (<div><div className="row">
         {images.map((imageString) => <div className='col-lg-3 col-md-4 col-sm-6'><Image className="card" width={500} height={500} alt={'alt'} src={`/images/${imageString}`} /> <br></br></div>)}
     </div></div>)
@@ -29,7 +29,7 @@ const GalleryPage = async () => {
 const Logo = () => {
     return (
         <div className='center1'>
-            <Image alt="Brinny Logo" className="logo"  width={250} height={250} src='/logo/brinna-logo.PNG'></Image>
+            <Image alt="Brinny Logo" className="logo"  width={200} height={191} src='/logo/brinna-logo-small.PNG'></Image>
         </div>
     )
 }
